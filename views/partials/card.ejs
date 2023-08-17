@@ -1,0 +1,39 @@
+<% locals.students.map((student)=>{ %>
+  <section class="card">
+    <article class="card-top-content">
+      <div class="card-top-content-leading">
+        <span class="name-first-char">S</span>
+        <div class="student-info">
+          <span><%= student.name %></span>
+          <span><%= student.number %></span>
+        </div>
+      </div>
+      <a href="#">
+        <form action="/<%= student.id %>" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <button type="submit" class="delete-row-btn">
+            <i class="fa-solid fa-xmark delete-row"></i>
+          </button>
+        </form>
+      </a>
+    </article>
+    <article class="card-marks">
+      <section class="mark-info">
+        <span>Activities</span>
+        <span><%= student.activities %></span>
+      </section>
+      <section class="mark-info">
+        <span>Mid-Term</span>
+        <span><%= student.mid %></span>
+      </section>
+      <section class="mark-info">
+        <span>Final-Term</span>
+        <span><%= student.final %></span>
+      </section>
+      <section class="mark-info">
+        <span>Total</span>
+        <span><%= student.total %></span>
+      </section>
+    </article>
+  </section>
+  <% }) %>

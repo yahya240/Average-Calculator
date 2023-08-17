@@ -1,0 +1,127 @@
+<form action="/" method="POST" class="marks-form">
+    <div class="form-group">
+      <label for="student-name" class="form-label">Student Name</label>
+      <input
+        type="text"
+        id="student-name"
+        class="form-input"
+        placeholder="Enter Student Name"
+        name="name"
+        value="<%= locals.old? locals.old.name : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="student-number" class="form-label">Student Number</label>
+      <input
+        type="number"
+        id="student-number"
+        class="form-input"
+        placeholder="Enter Student Number"
+        name="number"
+        value="<%= locals.old? locals.old.number : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="activities" class="form-label">Activities</label>
+      <input
+        type="number"
+        id="activities"
+        class="form-input"
+        placeholder="Enter Activities"
+        name="activities"
+        value="<%= locals.old? locals.old.activities : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="mid-term" class="form-label">Mid Term</label>
+      <input
+        type="number"
+        id="mid-term"
+        class="form-input"
+        placeholder="Enter Mark"
+        name="mid"
+        value="<%= locals.old? locals.old.mid : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="final-term" class="form-label">Final</label>
+      <input
+        type="number"
+        id="final-term"
+        class="form-input"
+        placeholder="Enter Mark"
+        name="final"
+        value="<%= locals.old? locals.old.name : '' %>"
+      />
+    </div>
+
+    <button type="submit" class="form-btn">SAVE</button>
+  </form>
+
+
+
+  <!-- <form action="/" method="POST" class="marks-form">
+    <div class="form-group">
+      <label for="student-name" class="form-label">Student Name</label>
+      <input
+        type="text"
+        id="student-name"
+        class="form-input"
+        placeholder="Enter Student Name"
+        name="name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="student-number" class="form-label">Student Number</label>
+      <input
+        type="number"
+        id="student-number"
+        class="form-input"
+        placeholder="Enter Student Number"
+        name="number"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="activities" class="form-label">Activities</label>
+      <input
+        type="number"
+        id="activities"
+        class="form-input"
+        placeholder="Enter Activities"
+        name="activities"
+        required
+        min="0" 
+        max="20"
+      />
+    </div>
+    <div class="form-group">
+      <label for="mid-term" class="form-label">Mid Term</label>
+      <input
+        type="number"
+        id="mid-term"
+        class="form-input"
+        placeholder="Enter Mark"
+        name="mid"
+        required
+        min="0" 
+        max="30"
+      />
+    </div>
+    <div class="form-group">
+      <label for="final-term" class="form-label">Final</label>
+      <input
+        type="number"
+        id="final-term"
+        class="form-input"
+        placeholder="Enter Mark"
+        name="final"
+        required
+        min="0" 
+        max="50"
+      />
+    </div>
+
+    <button type="submit" class="form-btn">SAVE</button>
+  </form> -->

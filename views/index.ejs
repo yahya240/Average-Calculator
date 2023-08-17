@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <section class="form-section">
+        <!-- Form Header -->
+        <%- include('./partials/form-head') %>
+        <% if(locals.errors) { %>
+          <div class="error-container">
+            <h2 class="error-heading">Validation Error</h2>
+            <% locals.errors.map((error)=>{ %>
+              <p class="error-message"><%= error.msg %></p>
+            <% }) %>
+          </div>
+        <% } %>
+        <!-- Average Calculator Form  -->
+        <%- include('./partials/form') %>
+      </section>
+      <section>
+        <!-- Student Card -->
+        <%- include('./partials/card') %>
+      </section>
+    </div>
+  </body>
+</html>
